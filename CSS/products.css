@@ -1,0 +1,85 @@
+.table-container {
+    overflow-x: auto;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+
+    th {
+        padding: .75rem .5rem;
+        background: rgb(255, 255, 255);
+
+        color: rgb(0, 0, 0);
+    }
+
+    td,
+    th {
+        border: 2px solid black;
+    }
+
+    tbody {
+
+        .board-image {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .board-image img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            padding: 8px;
+            border-radius: 50%;
+        }
+
+        tr:nth-child(even) {
+            background-color: white;
+        }
+
+        .board-name {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+
+        .board-description {
+            font-style: italic;
+            color: #212121;
+            text-align: center;
+        }
+
+        .board-value {
+            ul {
+                list-style: "- ";
+                padding: 12px;
+                text-align: center;
+            }
+        }
+
+        .actions {
+            text-align: center;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+#titulo {
+    background: rgb(218, 107, 210);
+    background: linear-gradient(90deg, rgba(117, 214, 131, 1) 0%, rgba(218, 107, 210, 1) 96%);
+    color: white;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.fa-pen-to-square,
+.fa-trash-can {
+    cursor: pointer;
+}

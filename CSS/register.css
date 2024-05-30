@@ -1,0 +1,39 @@
+form {
+    color: white;
+    background-color: black;
+    padding: 1rem;
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        .input-label {
+            font-size: .675rem;
+            margin-bottom: .25rem;
+            text-align: left;
+        }
+
+        input, textarea, select {
+            padding: .5rem;
+            border-radius: 4px;
+            color: #222;
+            outline: none;
+            border: none;
+        }
+
+        button {
+            padding: .5rem 1rem;
+            background-color: #222;
+            border-radius: 4px;
+            color: white;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+#registrate {
+    max-width: 500px;
+}
